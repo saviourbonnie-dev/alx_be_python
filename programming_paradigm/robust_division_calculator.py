@@ -12,11 +12,12 @@ def safe_divide(numerator, denominator):
 
         # Perform division
         result = num / den
-        return f"The result of dividing {num} by {den} is {result:.2f}"
+        return f"The result of the division is {result:.1f}"
 
     except ValueError:
-        # Handle non-numeric input (must match test exactly)
+        # Handle non-numeric input
         return "Error: Please enter numeric values only."
     except ZeroDivisionError:
-        # Handle division by zero (must match test exactly)
+        # Handle division by zero
         return "Error: Cannot divide by zero."
+
