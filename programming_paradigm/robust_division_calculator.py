@@ -10,13 +10,13 @@ def safe_divide(numerator, denominator):
         num = float(numerator)
         den = float(denominator)
 
-        # Attempt division
+        # Perform division
         result = num / den
         return f"The result of dividing {num} by {den} is {result:.2f}"
 
     except ValueError:
-        # Handle non-numeric input
-        return "Error: Both numerator and denominator must be numeric values."
+        # Handle non-numeric input (must match test exactly)
+        return "Error: Please enter numeric values only."
     except ZeroDivisionError:
-        # Handle division by zero (must match test exactly!)
+        # Handle division by zero (must match test exactly)
         return "Error: Cannot divide by zero."
